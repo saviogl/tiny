@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tinyfied: MyString
+  original: MyString
+  clicks: 1
+
+two:
+  tinyfied: MyString
+  original: MyString
+  clicks: 1

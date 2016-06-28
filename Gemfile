@@ -12,7 +12,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -28,6 +28,11 @@ gem 'hashids', '~> 1.0', '>= 1.0.2'
 
 # Faker
 gem 'faker', '~> 1.6', '>= 1.6.3'
+
+# Boostrap
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+# Autoprefixer
+gem 'autoprefixer-rails', '~> 6.3', '>= 6.3.6.2'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

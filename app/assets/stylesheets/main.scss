@@ -13,5 +13,15 @@
     input,button {
       height: 50px;
     }
+
+    input[type="text"] {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;      
+    }
+
+    button:last-child {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
   }
 }

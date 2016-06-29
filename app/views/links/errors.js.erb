@@ -1,1 +1,2 @@
-$(".tinyfied").append('<%= j render "main/invalidUrl", error: @link.errors %>');
+$(".tinyfied").empty();
+swal("Error!", "<%= @link.errors.messages.first.last.first.humanize.html_safe %>", "error");

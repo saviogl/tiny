@@ -1,1 +1,2 @@
-$(".tinyfied").append('<%= j render "main/newlink", link: @link %>');
+$(".tinyfied").empty().append('<%= j render "main/newlink", link: @link %>');
+$('[data-toggle="tooltip"]').tooltip('destroy').tooltip()

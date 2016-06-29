@@ -22,9 +22,11 @@ class LinksController < ApplicationController
       if @link.save
         format.html { redirect_to @link, notice: 'Link was successfully created.' }
         format.json { render :show, status: :created, location: @link }
+        format.js
       else
-        format.html { render :new }
+        format.html { redirect_to root_path, notice: @link.errors }
         format.json { render json: @link.errors, status: :unprocessable_entity }
+        format.js
       end
     end
   end

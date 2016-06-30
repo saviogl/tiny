@@ -7,6 +7,10 @@ class Link < ActiveRecord::Base
     "#{Rails.application.config.appHost}/#{self.tinyfied}"
   end
 
+  def getTinyUrlInfo
+    "#{Rails.application.config.appHost}/#{self.tinyfied}/info"
+  end
+
   private
 
     def tinify

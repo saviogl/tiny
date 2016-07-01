@@ -1,11 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  tinyfied: MyString
-  original: MyString
+  original: http://google.com/news/sports/11
   clicks: 1
 
 two:
-  tinyfied: MyString
-  original: MyString
+  original: http://google.com/news/sports/soccer
   clicks: 1

@@ -12,16 +12,14 @@ Live [demo](https://scenic-hawaii-volcanoes-39639.herokuapp.com/). A URL shorten
   * Postgresql
 
 * Configuration
-  * HashId salt and Minimun lenght set in config/secrets.yml
+  * **HashId salt** and **Minimun length** set in config/secrets.yml
   * appHost to be used when generating the tinyUrl set in config/environments/*.rb 
-  ```ruby
-    config.appHost = ENV['APP_HOST'] || 'http://localhost:3000'
-  ```
+  `config.appHost = ENV['APP_HOST'] || 'http://localhost:3000'`
 * Database creation, migration and seed
-  * rake db:setup
+  * `rake db:setup`
 
 * How to run the test suite
-  * rake test
+  * `rake test`
 
-* How to start server
+* How to start the server
   * Considering that postgresql is running, execute `rails s` to fire up the rails server

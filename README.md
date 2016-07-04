@@ -23,3 +23,5 @@ Live [demo](https://scenic-hawaii-volcanoes-39639.herokuapp.com/). A URL shorten
 * How to run the test suite
   * rake test
 
+* How to start server
+  * Considering that postgresql is running, execute `rails s` to fire up the rails server

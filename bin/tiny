@@ -13,7 +13,7 @@ Usage:
     ex: tinify https://www.google.com.br/intl/en/about/
   EOF
   exit
-elsif !( ARGV[0] =~ URI::regexp )
+elsif !( ARGV[0] =~ /\A^((http|https):\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(([0-9]{1,5})?\/.*)?$\z/i )
   STDOUT.puts <<-EOF
 Invalid URI
 Usage:

@@ -34,6 +34,9 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 # Autoprefixer
 gem 'autoprefixer-rails', '~> 6.3', '>= 6.3.6.2'
 
+# unirest
+gem 'unirest'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

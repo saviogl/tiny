@@ -1,6 +1,6 @@
 # Tiny URL Shortener
 
-Live [demo](https://scenic-hawaii-volcanoes-39639.herokuapp.com/). A URL shortener service built with Ruby On Rails
+Live [demo](http://tfy.herokuapp.com/). A URL shortener service built with Ruby On Rails
 
 # Application
 

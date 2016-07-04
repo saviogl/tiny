@@ -1,0 +1,40 @@
+#!/usr/bin/env ruby
+
+require "unirest"
+
+TINY_SERVER = 'http://localhost:3000/links'
+
+if ARGV.length == 0
+  STDOUT.puts <<-EOF
+Missing parameter
+Usage:
+
+    tinyfy [URL]
+    ex: tinify https://www.google.com.br/intl/en/about/
+  EOF
+  exit
+elsif !( ARGV[0] =~ URI::regexp )
+  STDOUT.puts <<-EOF
+Invalid URI
+Usage:
+
+    tinyfy [URL]
+    ex: tinify https://www.google.com.br/intl/en/about/
+  EOF
+  exit
+end
+
+begin
+  # POST data to rails server
+  response = Unirest.post TINY_SERVER, headers:{ "Accept" => "application/json" }, parameters: { link: { original: ARGV[0] } }
+rescue Exception => e
+  STDOUT.puts e
+  exit
+end
+
+case response.code
+when 201
+  STDOUT.puts response.body["tinyUrl"] # Parsed body
+else
+  STDOUT.puts 'Try again later'
+end

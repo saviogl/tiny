@@ -17,3 +17,11 @@
 </div>
 
 <div class="tinyfied container"></div>
+
+<% if @URI_Not_Found %>
+  <script type="text/javascript">
+    $(document).ready(function (){
+      swal("Error!", "Tiny Url: '<%= @URI_Not_Found.html_safe %>' not found!", "error");
+    });
+  </script>
+<% end %>

@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160628150229) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "links", force: :cascade do |t|
     t.string   "tinyfied"
     t.string   "original"
@@ -21,6 +24,6 @@ ActiveRecord::Schema.define(version: 20160628150229) do
     t.datetime "updated_at",             null: false
   end
 
-  add_index "links", ["tinyfied"], name: "index_links_on_tinyfied"
+  add_index "links", ["tinyfied"], name: "index_links_on_tinyfied", using: :btree
 
 end

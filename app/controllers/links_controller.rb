@@ -32,6 +32,7 @@ class LinksController < ApplicationController
       @link.save
       redirect_to @link.original
     else
+      session[:uri_not_found] = params[:tiny]
       redirect_to root_path
     end
   end

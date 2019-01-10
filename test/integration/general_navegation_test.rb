@@ -27,7 +27,7 @@ class GeneralNavegationTest < ActionDispatch::IntegrationTest
       fill_in "link[original]", with: "saivocom"
       click_button "Tinify!"
       within "div.sweet-alert" do
-        assert has_content?("Invalid uri"), "Missing Error Message"
+        assert has_content?("Invalid url"), "Missing Error Message"
         assert has_content?("Error"), "Missing Error Message"
       end
     end

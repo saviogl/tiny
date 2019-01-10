@@ -23,7 +23,7 @@ class LinkTest < ActiveSupport::TestCase
   test "invalid url gives an error message" do
     @link.original = "invalidurl"
     @link.valid?
-    assert_match /Invalid URI/, @link.errors[:original].join
+    assert_match /Invalid URL/, @link.errors[:original].join
   end
 
   test "generate Hashid from id" do

@@ -1,6 +1,7 @@
 dependencies:
   override:
     - env
+    - heroku auth:token
     - heroku git:remote -a shipit-thinkific
 deploy:
   override:

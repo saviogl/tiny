@@ -1,4 +1,4 @@
-# Tiny URL Shortener
+# Tiny URL Shortener [![Build Status](https://travis-ci.com/saviogl/tiny.svg?branch=master)](https://travis-ci.com/saviogl/tiny)
 
 Live [demo](http://tfy.herokuapp.com/). A URL shortener service built with Ruby On Rails
 

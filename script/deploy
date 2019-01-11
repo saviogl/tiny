@@ -1,3 +1,2 @@
 #!/bin/bash
-
-echo 'DEPLOYMENT SCRIPT'
+git push -f heroku $SHA

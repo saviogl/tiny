@@ -1,6 +1,6 @@
 dependencies:
   override:
-    - curl https://cli-assets.heroku.com/install.sh | sh
+    - heroku git:remote -a shipit-thinkific
 deploy:
   override:
     - ./script/deploy
@@ -12,14 +12,6 @@ deploy:
     - name: RUN_MIGRATIONS
       title: Run database migrations on deploy
       default: 1
-tasks:
-  info:
-    action: "Info"
-    description: "Some information that needs to be displayed"
-    steps:
-      - which heroku
-      - nproc
 review:
   checklist:
     - Did you notify X?
-    - Do you have the <a href="https://example.com/dash">monitoring dashboard</a> open?

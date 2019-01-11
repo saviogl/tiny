@@ -23,4 +23,4 @@ review:
     - Did you notify X?
     - Do you have the <a href="https://example.com/dash">monitoring dashboard</a> open,
   checks:
-    - bundle exec rake db:migrate:status
+    - env

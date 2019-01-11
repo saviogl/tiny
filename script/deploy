@@ -1,2 +1,2 @@
 #!/bin/bash
-git push -f heroku $SHA
+# git push -f heroku $SHA

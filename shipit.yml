@@ -1,5 +1,6 @@
 dependencies:
   override:
+    - env
     - heroku git:remote -a shipit-thinkific
 deploy:
   override:

@@ -1,6 +1,6 @@
 dependencies:
   override:
-    - date
+    - curl https://cli-assets.heroku.com/install.sh | sh
 deploy:
   override:
     - ./script/deploy

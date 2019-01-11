@@ -1,6 +1,13 @@
+dependencies:
+  override:
+    - env
 deploy:
   override:
-    - ./script/deploy        
+    - ./script/deploy
+  pre:
+    - ./script/notify_deploy_start
+  post:
+    - ./script/notify_deploy_end        
   variables:
     - name: RUN_MIGRATIONS
       title: Run database migrations on deploy
@@ -12,5 +19,8 @@ tasks:
     steps:
       - hostname
 review:
+  checklist:
+    - Did you notify X?
+    - Do you have the <a href="https://example.com/dash">monitoring dashboard</a> open,
   checks:
     - bundle exec rake db:migrate:status

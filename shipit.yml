@@ -1,11 +1,10 @@
 deploy:
+  override:
+    - ./script/deploy        
   variables:
     - name: RUN_MIGRATIONS
       title: Run database migrations on deploy
       default: 1
-ci:
-  require:
-    - ci/travis
 tasks:
   info:
     action: "Info"

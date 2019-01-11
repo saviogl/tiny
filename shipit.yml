@@ -1,6 +1,6 @@
 dependencies:
   override:
-    - env
+    - date
 deploy:
   override:
     - ./script/deploy
@@ -17,7 +17,8 @@ tasks:
     action: "Info"
     description: "Some information that needs to be displayed"
     steps:
-      - hostname
+      - which heroku
+      - nproc
 review:
   checklist:
     - Did you notify X?

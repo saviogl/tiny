@@ -2,4 +2,6 @@ language: ruby
 rvm:
  - 2.0
 services:
-  - postgresql 
+  - postgresql
+before_script:
+  - psql -c 'create database tiny_test;' -U postgres
